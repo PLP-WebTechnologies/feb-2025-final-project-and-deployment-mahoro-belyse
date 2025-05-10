@@ -3,29 +3,340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StyleNest</title>
+    <title>Becky Beauty Botique</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>StyleNest</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="login.html">Login</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+        <!-- Hamburger Icon -->
+      </div>
+      <nav class="navbar">
+        <p class="logo">
+          <b><em>Becky Beauty Botique</em></b>
+        </p>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="login.html">login in</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
+    <main>
+      <section id="home" class="section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 hero-left-column">
+              <h1>Beauty Finds</h1>
+              <p>Indulge Yoursef</p>
+            </div>
 
-    <section class="products">
-      <h2>New Arrivals</h2>
-      <div class="product-card">
-        <img src="images/dress.jpg" alt="Red Dress" />
-        <p>Red Dress - $20</p>
-        <button>Buy Now</button>
-      </div>
-      <!-- Add more products -->
-    </section>
+            <div class="col-md-6 hero-right-column text-center">
+              <img
+                src="images/images2222.jpeg"
+                alt="Beauty Image"
+                class="img-fluid"
+              /><br />
+              <button class="btn btn-primary btn-lg">
+                <a href="#about" class="button">Our products</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="product section">
+        <h2 class="product-category">Top products</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button>
+        <div class="product-container" id="products-background">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">20% off</span>
+              <img
+                src="images/MAC Stack Mascara.jpg"
+                class="product-thumb"
+                alt="Mascara"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Mascara</h2>
 
-    <footer>&copy; 2025 StyleNest</footer>
+              <span class="price">1,600rwf</span
+              ><span class="actual-price">2,000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/eyeliner.png"
+                class="product-thumb"
+                alt="Eyeliner"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Eyeliner</h2>
+
+              <span class="price">2,500rfw</span
+              ><span class="actual-price">5,000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/false_lashes_001.jpg"
+                class="product-thumb"
+                alt="Lashes"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Lashes</h2>
+
+              <span class="price">3,000rfw</span
+              ><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/foundatio.jpg"
+                class="product-thumb"
+                alt="Foundation"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Foundation</h2>
+
+              <span class="price">5,000rfw</span
+              ><span class="actual-price">8000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/blush.jpg" class="product-thumb" alt="blush" />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Blush</h2>
+
+              <span class="price">1,000rfw</span
+              ><span class="actual-price">2000</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/mirror.jpg" class="product-thumb" alt="Mirror" />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Mirror</h2>
+
+              <span class="price">10,000rwf</span
+              ><span class="actual-price">15,000rwf</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/lipgloss.jpg"
+                class="product-thumb"
+                alt="lipgloss"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Lipgloss</h2>
+
+              <span class="price">3000rwf</span
+              ><span class="actual-price">4000rwf</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/listick.jpg"
+                class="product-thumb"
+                alt="Lipstick"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Lipstick</h2>
+
+              <span class="price">3000rwf</span
+              ><span class="actual-price">5000rwf</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/concealer.jpeg"
+                class="product-thumb"
+                alt="concealer"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Concealer</h2>
+
+              <span class="price">1000rwf</span
+              ><span class="actual-price">1500rwf</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/highlighter.jpeg"
+                class="product-thumb"
+                alt="highlighter"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Highlighter</h2>
+
+              <span class="price">20,000rwf</span
+              ><span class="actual-price">40,000rwf</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/eyeshadow.jpeg"
+                class="product-thumb"
+                alt="eyeshadow"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Eyeshadow</h2>
+
+              <span class="price">3000rwf</span
+              ><span class="actual-price">4000rwf</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img
+                src="images/settingspray.png"
+                class="product-thumb"
+                alt="setting spray"
+              />
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">Setting spray</h2>
+
+              <span class="price">30,000rwf</span
+              ><span class="actual-price">40,000rwf</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  Trusted By / Partner Logos -->
+      <section class="partners-section">
+        <h2>Skinlo</h2>
+        <p>Timeless Beauty</p>
+
+        <div class="logos">
+          <div class="logo">⚡energator</div>
+          <div class="logo">GLMP.IT</div>
+          <div class="logo">gaze<span class="it">it</span></div>
+          <div class="logo">mtvs.news</div>
+        </div>
+      </section>
+
+      <section id="services" class="Gallery section">
+        <h2 class="gallery-title">Our Gallery</h2>
+
+        <div class="gallery-container">
+          <div class="image-container">
+            <img src="images/glowingskin11.jpeg" alt="Image 1" />
+            <div class="overlay">
+              <p>Text for Image 1</p>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img src="images/glowingskin2.jpg" alt="Image 2" />
+            <div class="overlay">
+              <p>Different text for Image 2</p>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img src="images/glowingskin3.jpg" alt="Image 3" />
+            <div class="overlay">
+              <p>More text here</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="images/glowingskin7.jpg" alt="Image 1" />
+            <div class="overlay">
+              <p>Text for Image 1</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="images/images22111.jpeg" alt="Image 1" />
+            <div class="overlay">
+              <p>Text for Image 1</p>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="images/glowingskin6.jpg" alt="Image 1" />
+            <div class="overlay">
+              <p>Text for Image 1</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">Contact Section</section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Your Name</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+    <script src="product.js"></script>
+    <script src="brand.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;0,600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +10,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgb(243, 181, 243);
+  background-color: #f7f7f7;
 }
 .box {
   position: relative;
-  width: 800px;
-  height: 500px;
+  width: 380px;
+  height: 420px;
   background-color: rgb(202, 103, 192);
   border-radius: 8px;
   overflow: hidden;
@@ -115,7 +115,7 @@ body {
 .box form {
   position: absolute;
   inset: 4px;
-  background-color: rgb(201, 15, 201);
+  background-color: #24323d;
   padding: 50px 40px;
   border-radius: 8px;
   z-index: 2;
