@@ -134,6 +134,7 @@ body {
   margin-top: 35px;
 }
 .box form .inputBox input {
+  position: relative;
   width: 100%;
   padding: 20px 10px 10px;
   background: transparent;
@@ -160,7 +161,7 @@ body {
 .box form .inputBox input:focus + span {
   color: white;
   font-size: 0.75em;
-  transform: translate(-34px);
+  transform: translateY(-34px);
 }
 .box form .inputBox i {
   position: absolute;
@@ -174,8 +175,8 @@ body {
   transition: 0.5s;
   pointer-events: none;
 }
-.box form .inputBox input:valid + i,
-.box form .inputBox input:focus + i {
+.box form .inputBox input:focus ~ i,
+.box form .inputBox input:valid ~ i {
   height: 44px;
 }
 .box form .links {

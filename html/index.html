@@ -9,7 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,7 +24,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
@@ -36,10 +39,12 @@
 
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="login.html">login in</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#brand">Brands</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="html/login.html">login</a></li>
+          <li><a href="html/sign.html">Signup</a></li>
         </ul>
       </nav>
     </header>
@@ -59,13 +64,13 @@
                 class="img-fluid"
               /><br />
               <button class="btn btn-primary btn-lg">
-                <a href="#about" class="button">Our products</a>
+                <a href="#product" class="button">Our products</a>
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section id="about" class="product section">
+      <section id="product" class="product section">
         <h2 class="product-category">Top products</h2>
         <button class="pre-btn"><img src="images/arrow.png" alt="" /></button>
         <button class="nxt-btn"><img src="images/arrow.png" alt="" /></button>
@@ -118,7 +123,7 @@
               <h2 class="product-brand">Lashes</h2>
 
               <span class="price">3,000rfw</span
-              ><span class="actual-price">$40</span>
+              ><span class="actual-price">5000</span>
             </div>
           </div>
           <div class="product-card">
@@ -269,66 +274,127 @@
         </div>
       </section>
       <!--  Trusted By / Partner Logos -->
-      <section class="partners-section">
-        <h2>Skinlo</h2>
-        <p>Timeless Beauty</p>
+      <section id="brand" class="partners-section">
+        <h2>BrandLuxe</h2>
+        <p>The brands we work with to give timeless Beauty</p>
 
         <div class="logos">
-          <div class="logo">⚡energator</div>
-          <div class="logo">GLMP.IT</div>
-          <div class="logo">gaze<span class="it">it</span></div>
-          <div class="logo">mtvs.news</div>
+          <div class="logo-name">⚡Her majesty</div>
+          <div class="logo-name">Glow Queenz</div>
+          <div class="logo-name">Allso<span class="it">Rwanda</span></div>
+          <div class="logo-name">
+            Fenty Beauty <span class="it">By Rihanna</span>
+          </div>
         </div>
       </section>
 
-      <section id="services" class="Gallery section">
+      <section id="gallery" class="Gallery section">
         <h2 class="gallery-title">Our Gallery</h2>
 
         <div class="gallery-container">
           <div class="image-container">
             <img src="images/glowingskin11.jpeg" alt="Image 1" />
             <div class="overlay">
-              <p>Text for Image 1</p>
+              <p>Glowing Skin Highlighter</p>
             </div>
           </div>
 
           <div class="image-container">
             <img src="images/glowingskin2.jpg" alt="Image 2" />
             <div class="overlay">
-              <p>Different text for Image 2</p>
+              <p>Bold Eyeshadow looks</p>
             </div>
           </div>
 
           <div class="image-container">
             <img src="images/glowingskin3.jpg" alt="Image 3" />
             <div class="overlay">
-              <p>More text here</p>
+              <p>Flawless Foundation Finish</p>
             </div>
           </div>
           <div class="image-container">
             <img src="images/glowingskin7.jpg" alt="Image 1" />
             <div class="overlay">
-              <p>Text for Image 1</p>
+              <p>Striking Lipstick Styles</p>
             </div>
           </div>
           <div class="image-container">
             <img src="images/images22111.jpeg" alt="Image 1" />
             <div class="overlay">
-              <p>Text for Image 1</p>
+              <p>Natural lip Shine</p>
             </div>
           </div>
           <div class="image-container">
             <img src="images/glowingskin6.jpg" alt="Image 1" />
             <div class="overlay">
-              <p>Text for Image 1</p>
+              <p>Everyday Beauty Tools</p>
             </div>
           </div>
         </div>
       </section>
-      <section id="contact" class="section">Contact Section</section>
+      <section id="contact" class="contact">
+        <div class="container-contact">
+          <h2>Contact us</h2>
+          <div class="contact-wrapper">
+            <div class="contact-form">
+              <h3>Send us a message</h3>
+              <form>
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="your name" />
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="your email" />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    placeholder="your message"
+                  ></textarea>
+                </div>
+                <button type="submit">Send message</button>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p><i class="fas fa-phone"></i>+250787488939</p>
+              <p><i class="fas fa-envelope"></i>beckybeauty@gmail.com</p>
+              <p><i class="fas fa-map-marker-alt"></i>Gasabo,Kigali,Rwanda</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2025 Your Name</p>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a
+            href="https://www.instagram.com/b_ecky_darling/?hl=en"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://x.com/BelyseMahoro" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Products</a></li>
+            <li><a href="#brand">Brands</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">contact us</a></li>
+            <li><a href="html/login.html">Login</a></li>
+            <li><a href="html/sign.html">Signup</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          Copyright &copy; 2025;
+          <span class="designer"> Becky Beauty Botique</span>
+        </p>
+      </div>
     </footer>
     <script>
       function toggleMenu() {
@@ -336,7 +402,7 @@
         navLinks.classList.toggle("active");
       }
     </script>
-    <script src="product.js"></script>
-    <script src="brand.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/brand.js"></script>
   </body>
 </html>
