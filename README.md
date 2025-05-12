@@ -26,9 +26,7 @@ This is my final project for the PLP Web Technologies course (Feb 2025). The pro
 ## 🚀 Deployment
 
 The website can be deployed using:
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
+- [GitHub Pages](https://github.com/PLP-WebTechnologies/feb-2025-final-project-and-deployment-mahoro-belyse.git)
 
 ## 📌 How to Use
 
