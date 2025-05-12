@@ -1,25 +1,42 @@
-# Final Project and Deployment
+# Final Web Project – Mahoro Belyse
 
-## Objectives
-Build a fully functional web application.
-Apply HTML, CSS, and JavaScript concepts learned.
-Deploy the project using GitHub Pages, Netlify, or Vercel.
+This is my final project for the PLP Web Technologies course (Feb 2025). The project is a simple multi-page clothing e-commerce website built using **HTML5**, **CSS3**, and **JavaScript**.
 
-## Instructions
-Choose one of the following project ideas:
-Blog Website: Implement a multi-page site with navigation.
-Ecommerce Website: Implement a multi-page site with navigation.
+## 🌐 Website Pages
 
->[!NOTE]
-> - Include at least:
-> - A responsive design.
-> - JavaScript interactivity.
-> - A deployment link.
+- **index.html** – Homepage of the website
+- **login.html** – Login page
+- **sign.html** – Sign-up/registration page
+- **frgpss.html** – Forgot password page
 
-## Tasks
+## 🎨 Styling (CSS Files)
 
-Create a well-structured HTML5 document.
-Use at least 5 different HTML elements.
-Ensure semantic correctness.
+- **style.css** – Main stylesheet for the website
+- **login.css** – Styles for the login page
+- **sign.css** – Styles for the sign-up page
+- **frgpss.css** – Styles for the forgot password page
 
-Good luck and happy coding! 🚀💻
+## 🧠 JavaScript Files
+
+- **brand.js** – JavaScript for displaying brands
+- **product.js** – JavaScript for displaying products
+- **sign.js** – JavaScript for sign-up form validation
+
+
+## 🚀 Deployment
+
+The website can be deployed using:
+- [GitHub Pages](https://pages.github.com/)
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+
+## 📌 How to Use
+
+1. Clone or download the project.
+2. Open `index.html` in your browser.
+3. Navigate through the different pages (sign up, login, etc.).
+
+---
+
+
+
